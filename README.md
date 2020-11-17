@@ -3,6 +3,7 @@
 Exploring unsupervised and semi supervised methods in video anomaly detection.
 Currently working on UCSD-Ped 1 Dataset.
 
-Create a folder called input_videos and put training videos inside that.
+There are still few errors in the code for data preprocessing stage, which I am working on.
 
+Will be updated soon...
 
