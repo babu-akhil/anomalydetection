@@ -10,15 +10,16 @@ import tensorflow
 import numpy as np
 from PIL import Image
 
-from model import get_single_test, mse
+from model import get_single_test, mse, get_model
 
 class Config:
   DATASET_PATH ="/kaggle/input/ucsddataset/UCSD_Anomaly_Dataset.v1p2/UCSDped1/Train"
-  TEST_PATH = "/kaggle/input/ucsddataset/UCSD_Anomaly_Dataset.v1p2/UCSDped1/Test"
+  SINGLE_TEST_PATH = "/kaggle/input/ucsddataset/UCSD_Anomaly_Dataset.v1p2/UCSDped1/Test/Test001"
   BATCH_SIZE = 4
   EPOCHS = 20
   MODEL_PATH = "/kaggle/working/model.hdf5"
 
+mod = get_model(True)
 test = get_single_test()
 sz = test.shape[0]
 sequences = np.zeros((sz, 5, 256, 256, 1))
