@@ -24,3 +24,7 @@ Parent folder:
 Then run train.py
 
 
+Testing:
+
+Edit test.py: Change SINGLE_TEST_PATH to the folder containing your test video and then run test.py
+
